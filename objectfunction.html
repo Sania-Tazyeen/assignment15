@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>arrow function</title>
+	<style type="text/css">
+		table,th,tr,thead-dark{
+			border: 1px solid #06f;
+			font-size: 24px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<table class="table">
+	<thead class="thead-dark">
+	<tr>
+		<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+			<th scope="col">Age</th>
+			<th scope="col">Contact</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">1</th>
+			<th id="demo"></th>
+			<th id="demo1"></th>
+			<th id="demo2"></th>
+			<th id="demo3"></th>
+		</tr>
+		<tr>
+			<th scope="row">2</th>
+			<th id="dem"></th>
+			<th id="dem1"></th>
+			<th id="dem2"></th>
+			<th id="dem3"></th>
+		</tr>
+		<tr>
+			<th scope="row">3</th>
+			<th id="de"></th>
+			<th id="de1"></th>
+			<th id="de2"></th>
+			<th id="de3"></th>
+		</tr>
+
+	<tr>
+			<th scope="row">4</th>
+			<th id="d"></th>
+			<th id="d1"></th>
+			<th id="d2"></th>
+			<th id="d3"></th>
+	</tr>
+	<tr>
+		<th scope="row">5</th>
+	<th id="san"></th>
+	<th id="san1"></th>
+	<th id="san2"></th>
+	<th id="san3"></th>
+	</tr>
+	<tr>
+		<th scope="row">6</th>
+	<th id="sa"></th>
+	<th id="sa1"></th>
+	<th id="sa2"></th>
+	<th id="sa3"></th>
+	</tr>
+	<tr>
+		<th scope="row">7</th>
+	<th id="s"></th>
+	<th id="s1"></th>
+	<th id="s2"></th>
+	<th id="s3"></th>
+	</tr>
+
+	<tr>
+		<th scope="row">8</th>
+	<th id="sam"></th>
+	<th id="sam1"></th>
+	<th id="sam2"></th>
+	<th id="sam3"></th>
+	</tr>
+
+	<tr>
+		<th scope="row">9</th>
+	<th id="moh"></th>
+	<th id="moh1"></th>
+	<th id="moh2"></th>
+	<th id="moh3"></th>
+	</tr>
+	<tr>
+		<th scope="row">10</th>
+	<th id="mo"></th>
+	<th id="mo1"></th>
+	<th id="mo2"></th>
+	<th id="mo3"></th>
+	</tr>
+</table>
+<script type="text/javascript">
+	class students{
+constructor(name, email,age,contact){
+	this.name = name;
+	this.email = email;
+	this.age= age;
+	this.contact= contact;
+	}
+}
+const stud = new students("Sania Tazyeen", "sania.tazyeen1995@gmail.com", "26", "987657654");
+document.getElementById("demo").innerHTML = stud.name;
+document.getElementById("demo1").innerHTML= stud.email;
+document.getElementById("demo2").innerHTML= stud.age;
+document.getElementById("demo3").innerHTML= stud.contact;
+
+
+const stud1 = new students("Muqtadir", "muqtadir@gmail.com", "28", "988757654");
+document.getElementById("dem").innerHTML = stud1.name;
+document.getElementById("dem1").innerHTML= stud1.email;
+document.getElementById("dem2").innerHTML= stud1.age;
+document.getElementById("dem3").innerHTML= stud1.contact;
+
+const stud2 = new students("Nusairah Mahveen", "nusaira5@gmail.com", "30", "767657654");
+document.getElementById("de").innerHTML = stud2.name;
+document.getElementById("de1").innerHTML= stud2.email;
+document.getElementById("de2").innerHTML= stud2.age;
+document.getElementById("de3").innerHTML= stud2.contact;
+
+
+const stud3 = new students("Yusra", "yusra95@gmail.com", "10", "989877654");
+document.getElementById("d").innerHTML = stud3.name;
+document.getElementById("d1").innerHTML= stud3.email;
+document.getElementById("d2").innerHTML= stud3.age;
+document.getElementById("d3").innerHTML= stud3.contact;
+
+const stud4 = new students("Fatima", "Fatima5@gmail.com", "5", "989888654");
+document.getElementById("san").innerHTML = stud4.name;
+document.getElementById("san1").innerHTML= stud4.email;
+document.getElementById("san2").innerHTML= stud4.age;
+document.getElementById("san3").innerHTML= stud4.contact;
+
+
+const stud5 = new students("Izhaan", "quraishi5@gmail.com", "19", "689877654");
+document.getElementById("sa").innerHTML = stud5.name;
+document.getElementById("sa1").innerHTML= stud5.email;
+document.getElementById("sa2").innerHTML= stud5.age;
+document.getElementById("sa3").innerHTML= stud5.contact;
+
+
+const stud6 = new students("Amreen", "amr@gmail.com", "40", "988977654");
+document.getElementById("s").innerHTML = stud6.name;
+document.getElementById("s1").innerHTML= stud6.email;
+document.getElementById("s2").innerHTML= stud6.age;
+document.getElementById("s3").innerHTML= stud6.contact;
+
+
+const stud7 = new students("Mohammed", "Mohammed@gmail.com", "20", "989877224");
+document.getElementById("sam").innerHTML = stud7.name;
+document.getElementById("sam1").innerHTML= stud7.email;
+document.getElementById("sam2").innerHTML= stud7.age;
+document.getElementById("sam3").innerHTML= stud7.contact;
+
+
+const stud8 = new students("Khizar", "khizzy@gmail.com", "32", "989877897");
+document.getElementById("moh").innerHTML = stud8.name;
+document.getElementById("moh1").innerHTML= stud8.email;
+document.getElementById("moh2").innerHTML= stud8.age;
+document.getElementById("moh3").innerHTML= stud8.contact;
+
+
+const stud9 = new students("Athar", "Att_85@gmail.com", "34", "913277654");
+document.getElementById("mo").innerHTML = stud9.name;
+document.getElementById("mo1").innerHTML= stud9.email;
+document.getElementById("mo2").innerHTML= stud9.age;
+document.getElementById("mo3").innerHTML= stud9.contact;
+
+
+</script>
+</body>
+</html>
